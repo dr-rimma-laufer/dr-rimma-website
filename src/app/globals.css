@@ -3,31 +3,136 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  /* Brand Colors */
+  --gold: #905e26;
+  --gold-light: #b8860b;
+  --dark-blue: #101828;
+  --white: #ffffff;
+  --black: #0a0f1a;
+
+  /* Fonts */
+  --font-heebo: var(--font-heebo), 'Heebo', sans-serif;
+  --font-assistant: var(--font-assistant), 'Assistant', sans-serif;
+
+  /* Spacing */
+  --section-padding: 4rem;
+  --container-max: 1280px;
+  --hero-height-desktop: 70vh;
+  --hero-height-mobile: 50vh;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+/* RTL Support */
+html[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+}
+
+/* Base styles */
+body {
+  font-family: var(--font-heebo);
+  color: var(--dark-blue);
+  background-color: var(--white);
+}
+
+/* Hebrew text optimization */
+.hebrew-text {
+  font-family: var(--font-heebo);
+  direction: rtl;
+  unicode-bidi: embed;
+}
+
+@layer base {
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heebo);
+    font-weight: 700;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@layer components {
+  /* Container */
+  .container-custom {
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  /* Section padding */
+  .section-padding {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+  }
+
+  /* Hero section */
+  .hero-section {
+    min-height: var(--hero-height-mobile);
+  }
+
+  @media (min-width: 1024px) {
+    .hero-section {
+      min-height: var(--hero-height-desktop);
+    }
+  }
+
+  /* Gold button */
+  .btn-gold {
+    background-color: var(--gold);
+    color: var(--white);
+    padding: 0.75rem 2rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    transition: background-color 0.2s;
+  }
+
+  .btn-gold:hover {
+    background-color: var(--gold-light);
+  }
+
+  /* Outline button */
+  .btn-outline {
+    border: 2px solid var(--gold);
+    color: var(--gold);
+    padding: 0.75rem 2rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    transition: all 0.2s;
+  }
+
+  .btn-outline:hover {
+    background-color: var(--gold);
+    color: var(--white);
+  }
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+
+  /* RTL-aware margins */
+  .ms-auto {
+    margin-inline-start: auto;
+  }
+
+  .me-auto {
+    margin-inline-end: auto;
+  }
+
+  /* Gold text */
+  .text-gold {
+    color: var(--gold);
+  }
+
+  /* Dark blue text */
+  .text-dark-blue {
+    color: var(--dark-blue);
+  }
+
+  /* Background colors */
+  .bg-gold {
+    background-color: var(--gold);
+  }
+
+  .bg-dark-blue {
+    background-color: var(--dark-blue);
   }
 }
