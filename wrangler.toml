@@ -1,0 +1,21 @@
+name = "dr-rimma-website"
+compatibility_date = "2024-12-01"
+compatibility_flags = ["nodejs_compat"]
+
+# Pages configuration
+pages_build_output_dir = ".vercel/output/static"
+
+# D1 Database binding
+[[d1_databases]]
+binding = "DB"
+database_name = "dr-rimma-db"
+database_id = "0310d98c-1951-44b1-86b0-ac303e4f87c6"
+
+# R2 Bucket binding
+[[r2_buckets]]
+binding = "IMAGES"
+bucket_name = "dr-rimma-images"
+
+# Environment variables
+[vars]
+ENVIRONMENT = "production"
