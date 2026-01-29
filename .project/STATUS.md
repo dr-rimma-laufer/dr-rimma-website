@@ -3,8 +3,8 @@
 > **AI: Read this file FIRST. It's always small and current.**
 
 ## Quick State
-- **Phase**: 1 (Setup)
-- **Task**: Create basic page structure
+- **Phase**: 2 (CMS Build)
+- **Task**: Build admin CMS panel
 - **Status**: IN PROGRESS
 - **Blocker**: None
 
@@ -17,7 +17,8 @@
 
 ## Cloudflare Resources Created
 - **D1 Database**: dr-rimma-db (ID: 0310d98c-1951-44b1-86b0-ac303e4f87c6)
-- **R2 Bucket**: Pending (needs to be enabled in dashboard)
+- **R2 Bucket**: dr-rimma-images (created)
+- **Pages Project**: website (website-duu.pages.dev)
 
 ## Current Sprint
 | Task | Status |
@@ -26,17 +27,23 @@
 | Initialize Next.js | Done |
 | Set up D1 database | Done |
 | Create DB schema | Done |
-| Enable R2 bucket | Pending (user action) |
-| Create page structure | In Progress |
-| Deploy to Cloudflare | Pending |
+| Enable R2 bucket | Done |
+| Create page structure | Done |
+| Deploy to Cloudflare | Done |
+| Build admin CMS panel | In Progress |
+| Create API routes | Pending |
+| Migrate content | Pending |
 
 ## Next Action
-Create basic page layout and components
+Build admin CMS panel for content management
 
 ## Git
 - Branch: `main`
 - Remote: https://github.com/dr-rimma-laufer/dr-rimma-website
-- Last commit: None yet (initial setup)
+- Last commit: 192b01d (Fix package-lock.json sync)
+
+## Live URLs
+- Production: https://website-duu.pages.dev
 
 ## Quick Links
 - Architecture: `.project/ARCHITECTURE.md`
@@ -44,4 +51,4 @@ Create basic page layout and components
 - Protocols: `.project/PROTOCOLS.md`
 
 ---
-*Last updated: 2026-01-12 by Claude*
+*Last updated: 2026-01-16 by Claude*

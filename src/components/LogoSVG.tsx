@@ -1,0 +1,1 @@
+// File deleted - consolidated into Logo.tsx
