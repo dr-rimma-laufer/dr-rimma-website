@@ -198,7 +198,7 @@ export function HairTransplanFaqPage({ onNavigate }: HairTransplanFaqPageProps) 
           <div className="w-full mb-8 flex items-center justify-center">
             <div className="w-full max-w-md h-80">
               <ImageWithFallback
-                src={desktopImage}
+                src={desktopImage.src}
                 alt="שאלות נפוצות על השתלת שיער"
                 className="w-full h-full object-cover rounded-2xl"
               />
@@ -345,7 +345,7 @@ export function HairTransplanFaqPage({ onNavigate }: HairTransplanFaqPageProps) 
           <div 
             className="h-1/2 bg-dark-blue flex items-center justify-center"
             style={{
-              backgroundImage: `url(${desktopImage})`,
+              backgroundImage: `url(${desktopImage.src})`,
               backgroundSize: 'cover',
               backgroundPosition: 'center',
               backgroundRepeat: 'no-repeat'

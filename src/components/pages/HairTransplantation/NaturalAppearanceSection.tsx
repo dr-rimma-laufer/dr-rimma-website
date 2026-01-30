@@ -22,7 +22,7 @@ export function NaturalAppearanceSection() {
             
             {/* Mobile Image - Below Title */}
             <img 
-              src={naturalAppearImage} 
+              src={naturalAppearImage.src} 
               alt="מראה טבעי אחרי השתלת שיער" 
               className="lg:hidden w-full h-64 object-cover rounded-xl mb-6"
             />

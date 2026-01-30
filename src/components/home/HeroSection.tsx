@@ -23,10 +23,10 @@ export function HeroSection() {
     return () => window.removeEventListener('resize', checkScreenSize);
   }, []);
 
-  const backgroundImage = isMobile ? heroImageMobile : heroImageDesktop;
+  const backgroundImage = isMobile ? heroImageMobile.src : heroImageDesktop.src;
 
   return (
-    <section 
+    <section
       className="relative flex flex-col justify-start overflow-hidden hebrew-text"
       style={{
         backgroundImage: `url(${backgroundImage})`,

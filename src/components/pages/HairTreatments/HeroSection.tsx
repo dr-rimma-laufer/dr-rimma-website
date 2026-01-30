@@ -59,7 +59,7 @@ export function HeroSection() {
           <div className="relative w-full h-full">
             <div className="aspect-[4/3] lg:aspect-auto lg:h-full overflow-hidden shadow-2xl">
               <img
-                src={heroImage}
+                src={heroImage.src}
                 alt="בדיקה דר直通车קופית מתקדמת - אבחון מקצועי של קרקפת ושיער עם מכשיר דר直通车קופ"
                 className="w-[calc(100%-2rem)] lg:w-full mx-4 lg:mx-0 h-full object-cover rounded-lg lg:rounded-none"
               />

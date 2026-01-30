@@ -155,7 +155,7 @@ export function ServicesCardsSection({ onNavigate }: ServicesCardsSectionProps) 
             >
               {/* Background Image */}
               <img
-                src={service.image}
+                src={typeof service.image === 'string' ? service.image : service.image.src}
                 alt={service.title}
                 className="absolute inset-0 w-full h-full object-cover"
               />

@@ -8,7 +8,7 @@ export function DermatologyHero() {
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: `url(${heroImage})` }}
+        style={{ backgroundImage: `url(${heroImage.src})` }}
       />
       
       {/* Content */}

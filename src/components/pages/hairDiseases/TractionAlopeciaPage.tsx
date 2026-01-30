@@ -279,7 +279,7 @@ export function TractionAlopeciaPage({ onNavigate, onClose }: TractionAlopeciaPa
                   </div>
                   <div className="relative overflow-hidden rounded-2xl shadow-2xl flex-1">
                     <ImageWithFallback
-                      src={tractionAlopeciaCardImage}
+                      src={tractionAlopeciaCardImage.src}
                       alt={`${diseaseData.title} - תמונה נוספת`}
                       className="w-full h-80 object-cover bg-gray-50"
                     />

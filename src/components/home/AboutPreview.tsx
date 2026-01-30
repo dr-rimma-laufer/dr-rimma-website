@@ -28,7 +28,7 @@ export function AboutPreview({ onNavigate }: AboutPreviewProps) {
             {/* תמונה ראשית של ד"ר רימה */}
             <div className="relative mb-8">
               <img
-                src={drRimmaImage}
+                src={drRimmaImage.src}
                 alt="ד״ר רימה לאופר - מומחית לרפואת עור והשתלות שיער"
                 className="w-full h-96 object-cover rounded-2xl shadow-xl"
               />     

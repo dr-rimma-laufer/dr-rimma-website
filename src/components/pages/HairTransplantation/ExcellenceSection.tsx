@@ -33,7 +33,7 @@ export function ExcellenceSection() {
             {/* תמונה גדולה */}
             <div className="relative z-10 rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src={surgeonImage2}
+                src={surgeonImage2.src}
                 alt="רופאה מבצעת השתלת שיער בדיוק מקסימלי"
                 className="w-full aspect-[5/3] lg:aspect-[4/3] object-cover object-center"
               />
@@ -43,7 +43,7 @@ export function ExcellenceSection() {
             <div className="hidden md:block absolute bottom-0 left-0 w-[62%] -mb-8 lg:-mb-12 -ml-6 lg:-ml-12 xl:-ml-20 z-20">
               <div className="rounded-2xl overflow-hidden shadow-2xl border-4 border-white">
                 <img
-                  src={surgeonImage}
+                  src={surgeonImage.src}
                   alt="רופאה מומחית מבצעת השתלת שיער"
                   className="w-full aspect-[4/3] object-cover object-center"
                 />

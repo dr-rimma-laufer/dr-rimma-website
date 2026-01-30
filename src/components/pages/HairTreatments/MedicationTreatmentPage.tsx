@@ -99,7 +99,7 @@ export function MedicationTreatmentPage({ onNavigate, onClose }: MedicationTreat
               <div className="relative order-1 lg:order-2">
                 <div className="relative overflow-hidden rounded-2xl shadow-2xl">
                   <ImageWithFallback
-                    src={medicationTreatmentImage}
+                    src={medicationTreatmentImage.src}
                     alt="טיפול תרופתי לשיער - תרופות וכדורים מתקדמים לעצירת נשירה"
                     className="w-full h-64 object-cover"
                   />

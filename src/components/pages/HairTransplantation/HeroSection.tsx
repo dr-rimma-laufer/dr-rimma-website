@@ -19,12 +19,12 @@ export function HeroSection() {
         {/* Mobile Image Section */}
         <div className="relative h-[50vh] max-h-[50vh] pb-0 mb-0 leading-[0] flex-shrink-0">
           <ImageWithFallback
-            src={replacementHeroImage}
+            src={replacementHeroImage.src}
             alt="השתלת שיער ברמה הגבוהה ביותר"
             className="w-full h-full object-cover object-top-left block md:hidden align-bottom"
           />
           <ImageWithFallback
-            src={newHeroImage}
+            src={newHeroImage.src}
             alt="השתלת שיער ברמה הגבוהה ביותר"
             className="w-full h-full object-cover hidden md:block"
           />
@@ -203,7 +203,7 @@ export function HeroSection() {
       <div
         className="hidden md:block absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: `url(${desktopHeroImage})`,
+          backgroundImage: `url(${desktopHeroImage.src})`,
         }}
       ></div>
 

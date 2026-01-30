@@ -99,7 +99,7 @@ export function MesotherapyTreatmentPage({ onNavigate, onClose }: MesotherapyTre
               <div className="relative order-1 lg:order-2">
                 <div className="relative overflow-hidden rounded-2xl shadow-2xl">
                   <ImageWithFallback
-                    src={mesotherapyImage}
+                    src={mesotherapyImage.src}
                     alt="טיפול מזותרפיה לשיער - הזרקות מיקרוסקופיות לקרקפת"
                     className="w-full h-64 object-cover"
                   />

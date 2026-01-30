@@ -42,7 +42,7 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
         {/* Background Image */}
         <div className="absolute inset-0">
           <img
-            src={aboutHeroImage}
+            src={aboutHeroImage.src}
             alt="ד״ר רימה לאופר - מומחית לרפואת עור והשתלות שיער"
             className="w-full h-full object-cover object-top"
           />
@@ -111,7 +111,7 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
                 </div>
                 <div className="bg-white border border-[#101828]/10 rounded-xl p-6 flex items-center gap-4">
                   <img
-                    src={ishrsLogo}
+                    src={ishrsLogo.src}
                     alt="ISHRS"
                     className="h-16 w-16 object-contain flex-shrink-0"
                   />
@@ -154,7 +154,7 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
                   {/* תמונה ראשונה */}
                   <div className="relative">
                     <img
-                      src={doctorWithTechnology}
+                      src={doctorWithTechnology.src}
                       alt="רופאה מומחית עובדת עם טכנולוגיה מתקדמת - מיקרוסקופ ומסכי אבחון מעבדתיים"
                       className="w-full h-48 object-cover rounded-xl shadow-lg"
                     />
@@ -164,7 +164,7 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
                   {/* תמונה שנייה */}
                   <div className="relative">
                     <img
-                      src={doctorConsultation}
+                      src={doctorConsultation.src}
                       alt="ייעוץ רפואי אישי - רופאה מסבירה תכנית טיפול מותאמת אישית למטופל"
                       className="w-full h-48 object-cover rounded-xl shadow-lg"
                     />
@@ -193,7 +193,7 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
             <div className="relative w-full max-w-lg">
               {/* תמונה תחתונה (ראשונה) - מקוטנת וממורכזת */}
               <img
-                src={doctorWithTechnology}
+                src={doctorWithTechnology.src}
                 alt="רופאה מומחית עובדת עם טכנולוגיה מתקדמת - מיקרוסקופ ומסכי אבחון מעבדתיים"
                 className="w-full h-auto object-cover rounded-2xl shadow-2xl"
               />
@@ -204,7 +204,7 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
               {/* תמונה עליונה (מדורגת/מוסטת מעט) */}
               <div className="absolute bottom-0 right-0 translate-x-1/4 translate-y-1/4 w-[50%] max-w-[300px] shadow-lg rounded-lg overflow-hidden border-4 border-white">
                 <img
-                  src={doctorConsultation}
+                  src={doctorConsultation.src}
                   alt="ייעוץ רפואי אישי - רופאה מסבירה תכנית טיפול מותאמת אישית למטופל"
                   className="w-full h-auto object-cover"
                 />
@@ -264,7 +264,7 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
             <div className="hidden lg:block relative w-full max-w-lg">
               {/* תמונה ראשית גדולה */}
               <img
-                src={surgicalProcedure}
+                src={surgicalProcedure.src}
                 alt="טיפול מתקדם - רופאה מומחית מבצעת פרוצדורה עם ציוד מיקרוסקופי מתקדם"
                 className="w-full h-auto object-cover rounded-2xl shadow-2xl"
               />
@@ -272,7 +272,7 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
               {/* תמונה שנייה - מדורגת בצד ימין תחתון */}
               <div className="absolute bottom-0 right-0 translate-x-1/4 translate-y-1/4 w-[50%] max-w-[300px] shadow-lg rounded-lg overflow-hidden border-4 border-white">
                 <img
-                  src={advancedDiagnostics}
+                  src={advancedDiagnostics.src}
                   alt="אבחנה מתקדמת - בדיקה מקצועית עם מכשיר אבחון ותצוגה דיגיטלית מפורטת"
                   className="w-full h-auto object-cover"
                 />
@@ -281,7 +281,7 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
               {/* תמונה שלישית - מדורגת בצד שמאל עליון */}
               <div className="absolute top-0 left-0 -translate-x-1/4 -translate-y-1/4 w-[50%] max-w-[250px] shadow-lg rounded-lg overflow-hidden border-4 border-white">
                 <img
-                  src={doctorDiagnosis}
+                  src={doctorDiagnosis.src}
                   alt="אבחון מקצועי - ד״ר לאופר בודקת מטופל עם מיקרוסקופ מתקדם ותצוגת מסך מפורטת"
                   className="w-full h-auto object-cover"
                 />
@@ -310,7 +310,7 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
               <div className="lg:hidden w-full max-w-md mx-auto mb-8 space-y-6">
                 <div className="relative">
                   <img
-                    src={doctorDiagnosis}
+                    src={doctorDiagnosis.src}
                     alt="אבחון מקצועי - ד״ר לאופר בודקת מטופל עם מיקרוסקופ מתקדם ותצוגת מסך מפורטת"
                     className="w-full h-48 object-cover rounded-xl shadow-lg"
                   />
@@ -318,7 +318,7 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
 
                 <div className="relative">
                   <img
-                    src={surgicalProcedure}
+                    src={surgicalProcedure.src}
                     alt="טיפול מתקדם - רופאה מומחית מבצעת פרוצדורה עם ציוד מיקרוסקופי מתקדם"
                     className="w-full h-48 object-cover rounded-xl shadow-lg"
                   />
@@ -326,7 +326,7 @@ export function AboutPage({ onNavigate }: AboutPageProps) {
 
                 <div className="relative">
                   <img
-                    src={advancedDiagnostics}
+                    src={advancedDiagnostics.src}
                     alt="אבחנה מתקדמת - בדיקה מקצועית עם מכשיר אבחון ותצוגה דיגיטלית מפורטת"
                     className="w-full h-48 object-cover rounded-xl shadow-lg"
                   />

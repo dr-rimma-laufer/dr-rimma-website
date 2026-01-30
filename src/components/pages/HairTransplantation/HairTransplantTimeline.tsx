@@ -57,7 +57,7 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
           position: 'absolute',
           inset: 0,
           transition: 'all 0.5s',
-          backgroundImage: `url(${bgImage})`,
+          backgroundImage: `url(${typeof bgImage === 'string' ? bgImage : bgImage.src})`,
           backgroundPosition: `${imageSection * (100/(totalSections-1))}% center`,
           backgroundSize: `${totalSections * 100}% 100%`,
           backgroundRepeat: 'no-repeat',
@@ -278,7 +278,7 @@ const HairTransplantTimeline: React.FC<HairTransplantTimelineProps> = ({
         <div className="px-4 pb-8">
           <div className="relative h-48 w-full rounded-lg overflow-hidden mb-6 mt-6">
             <ImageWithFallback
-              src={bgImage}
+              src={typeof bgImage === 'string' ? bgImage : bgImage.src}
               alt="ציר זמן השתלת שיער"
               className="w-full h-full object-cover"
             />

@@ -100,7 +100,7 @@ export function LaserTreatmentPage({ onNavigate, onClose }: LaserTreatmentPagePr
               <div className="relative order-1 lg:order-2">
                 <div className="relative overflow-hidden rounded-2xl shadow-2xl">
                   <ImageWithFallback
-                    src={lowLevelLaserTreatmentImage}
+                    src={lowLevelLaserTreatmentImage.src}
                     alt="טיפול לייזר LLLT לשיער - טכנולוגיה מתקדמת ללא מגע"
                     className="w-full h-64 object-cover"
                   />
