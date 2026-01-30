@@ -66,8 +66,8 @@ export function FUEMethodSection() {
 
           {/* עמודה שמאלית - תמונה בדסקטופ בלבד */}
           <div className="hidden lg:flex lg:order-2 items-center justify-center">
-            <img 
-              src={fueMethodImage} 
+            <img
+              src={fueMethodImage.src}
               alt="שיטת FUE - תהליך השתלת שיער"
               className="w-full max-w-md rounded-lg shadow-lg border-4 border-dark-blue"
               style={{ boxShadow: "0 20px 40px rgba(16, 24, 40, 0.2), 0 10px 20px rgba(144, 94, 38, 0.15)" }}

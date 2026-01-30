@@ -95,8 +95,8 @@ export function NaturalAppearanceSection() {
 
         {/* Image - Right Side - Desktop Only */}
         <div className="hidden lg:block absolute left-0 top-0 w-3/5 h-full">
-          <img 
-            src={naturalAppearImage} 
+          <img
+            src={naturalAppearImage.src}
             alt="מראה טבעי אחרי השתלת שיער" 
             className="w-full h-full object-cover object-left"
           />
